@@ -4,7 +4,7 @@ This repository contains two PowerShell scripts designed to manage and automate 
 
 ## Scripts Overview
 
-### 1. `Активация задачи GPO_LOGON_DENY.ps1`
+### 1. `Enable task GPO_LOGON_DENY.ps1`
 This script is responsible for activating a scheduled task that monitors and manages the `GPO_LOGON_DENY` policy. It includes features like:
 
 - **File Creation and Deletion**: The script checks for the existence of a specific file, which acts as a marker or indicator of the last successful operation. If the file is older than 48 hours, it is deleted. This mechanism ensures that the system can detect if the scheduled task is failing to run as expected. By removing the file after 48 hours, the script resets the environment, allowing for accurate monitoring and preventing false positives in task monitoring.
@@ -12,7 +12,7 @@ This script is responsible for activating a scheduled task that monitors and man
 - Monitoring the status and last run time of the task.
 - Sending email notifications if certain conditions are met (e.g., the task hasn't run for a specified time).
 
-### 2. `Обновление членства GPO_LOGON_DENY.ps1`
+### 2. `Update GPO_LOGON_DENY.ps1`
 This script updates the membership of the `GPO_LOGON_DENY` group. Its main functionalities include:
 
 - Retrieving all users in the `gpo_logon_deny` group.
@@ -41,7 +41,7 @@ This script updates the membership of the `GPO_LOGON_DENY` group. Its main funct
 
 ## Обзор скриптов
 
-### 1. `Активация задачи GPO_LOGON_DENY.ps1`
+### 1. `Enable task GPO_LOGON_DENY.ps1`
 Этот скрипт отвечает за активацию запланированной задачи, которая отслеживает и управляет политикой `GPO_LOGON_DENY`. Основные функции:
 
 - **Создание и удаление файла**: Скрипт проверяет наличие специального файла, который выступает в роли маркера или индикатора успешного выполнения задачи.
@@ -50,7 +50,7 @@ This script updates the membership of the `GPO_LOGON_DENY` group. Its main funct
 - Мониторинг статуса и времени последнего запуска задачи.
 - Отправка уведомлений по электронной почте, если выполнены определенные условия (например, задача не запускалась в течение указанного времени).
 
-### 2. `Обновление членства GPO_LOGON_DENY.ps1`
+### 2. `Update GPO_LOGON_DENY.ps1`
 Этот скрипт обновляет членство в группе `GPO_LOGON_DENY`. Основные функции:
 
 - Получение всех пользователей в группе `gpo_logon_deny`.
